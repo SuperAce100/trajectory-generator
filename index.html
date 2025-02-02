@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="simulation">
+        <main></main>
+      </div>
+      <div class="controls">
+        <h2>Robot Path Planning</h2>
+        <div class="control-section">
+          <h3>Controls</h3>
+          <ul>
+            <li><strong>Arrow Keys:</strong> Move robot manually</li>
+            <li><strong>A/D:</strong> Rotate robot</li>
+            <li><strong>Space or Button:</strong> Go to target</li>
+          </ul>
+          <button id="target" onclick="goToTarget()">Go To Target</button>
+        </div>
+        
+        <div class="control-section">
+          <h3>Path Planning</h3>
+          <ul>
+            <li><strong>Click:</strong> Set target position</li>
+            <li><strong>Second Click:</strong> Set target orientation</li>
+            <li><strong>Shift + Click:</strong> Add obstacle</li>
+            <li><strong>O:</strong> Toggle obstacle visualization</li>
+          </ul>
+        </div>
+        
+        <div class="control-section">
+          <h3>About</h3>
+          <p>
+            This simulation demonstrates autonomous robot path planning with obstacle avoidance.
+            The robot uses a gradient descent algorithm to find optimal paths while considering
+            kinematic constraints and obstacles.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="trajectories.js"></script>
+  </body>
+</html>
