@@ -48,8 +48,7 @@ The robot model includes:
 ## Setup
 
 1. Clone the repository
-2. Open `index.html` in a modern web browser
-3. No additional dependencies or build steps required
+2. Open `index.html` in a web browser
 
 ## How It Works
 
